@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width ",initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      table,
+      td {
+        border: 2px solid;
+        width: 200px;
+        height: 150px;
+        border-collapse: collapse;
+        text-shadow: 2px 2px green;
+        text-align: center;
+      }
+      .t1 {
+        display: none;
+        background-color: blueviolet;
+        height: 50vh;
+        width: 50vw;
+      }
+      .t2 {
+        display: none;
+        background-color: darkolivegreen;
+        height: 50vh;
+        width: 50vw;
+      }
+      .t3 {
+        display: none;
+        background-color: gray;
+        height: 50vh;
+        width: 50vw;
+      }
+
+      /* .t2, td{
+                border-color: red; 
+            }
+            .t3, td{
+                border-color: green;  
+            } */
+      @media screen and (max-width: 425px) {
+        .t1 {
+          display: table;
+        }
+      }
+      @media screen and (min-width: 426px) and (max-width: 768px) {
+        .t2 {
+          display: table;
+        }
+      }
+      @media screen and (min-width: 769px) {
+        .t3 {
+          display: table;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <table class="t1">
+      <caption>
+        <h2>TABLE1</h2>
+      </caption>
+      <tr>
+        <td>data1</td>
+        <td>data2</td>
+      </tr>
+
+      <tr>
+        <td>data3</td>
+        <td>data4</td>
+      </tr>
+    </table>
+    <table class="t2">
+      <caption>
+        <h2>TABLE2</h2>
+      </caption>
+      <tr>
+        <td>data5</td>
+        <td>data6</td>
+        <td>data7</td>
+      </tr>
+      <tr>
+        <td>data8</td>
+        <td>data9</td>
+        <td>data10</td>
+      </tr>
+      <tr>
+        <td>data11</td>
+        <td>data12</td>
+        <td>data13</td>
+      </tr>
+    </table>
+    <table class="t3">
+      <caption>
+        <h2>TABLE3</h2>
+      </caption>
+      <tr>
+        <td>data14</td>
+        <td>data15</td>
+        <td>data16</td>
+        <td>data17</td>
+      </tr>
+      <tr>
+        <td>data18</td>
+        <td>data19</td>
+        <td>data20</td>
+        <td>data21</td>
+      </tr>
+      <tr>
+        <td>data22</td>
+        <td>data23</td>
+        <td>data24</td>
+        <td>data25</td>
+      </tr>
+      <tr>
+        <td>data26</td>
+        <td>data27</td>
+        <td>data28</td>
+        <td>data29</td>
+      </tr>
+    </table>
+  </body>
+</html>
